@@ -22,21 +22,21 @@
 	<div class="limiter">
 		<div class="container-login100">
 			<div class="wrap-login100">
-				<form class="login100-form validate-form">
+				<form class="login100-form validate-form" id="porte" method="post" onsubmit="return verif()" action='email.php'>
 					<span class="login100-form-title p-b-43">
 						LA PORTE
 					</span>
 
 
 					<div class="wrap-input100 validate-input" data-validate="Valid email is required: ex@abc.xyz">
-						<input class="input100" type="text" name="email" autocomplete="off">
+						<input class="input100" type="text" id="email" name="email" autocomplete="off">
 						<span class="focus-input100"></span>
 						<span class="label-input100">Adresse e-mail</span>
 					</div>
 
 
 					<div class="wrap-input100 validate-input" data-validate="Password is required">
-						<input class="input100" type="password" name="pass">
+						<input class="input100" type="password" id="mdp" name="pass">
 						<span class="focus-input100"></span>
 						<span class="label-input100">Mot de passe</span>
 					</div>
@@ -68,7 +68,7 @@
 							<a href="#">Créer un compte</a>
 						</span>
 					</div>
-					<div class="message"></div>
+					<div id="message" class="message"></div>
 				</form>
 
 				<div class="login100-more"></div>

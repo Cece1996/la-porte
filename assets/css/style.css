@@ -1,3 +1,10 @@
 /** 
 * Feuille de style supplémentaire
 */
+#porte{
+    background-image: url('../images/peinture.png');
+    background-repeat: no-repeat;
+}
+.wrap-input100 {
+    background-color: beige;
+}
